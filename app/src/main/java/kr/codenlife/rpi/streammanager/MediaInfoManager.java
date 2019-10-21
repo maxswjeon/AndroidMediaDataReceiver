@@ -1,5 +1,7 @@
 package kr.codenlife.rpi.streammanager;
 
+import android.util.Log;
+
 import java.util.HashMap;
 
 public class MediaInfoManager {
@@ -15,6 +17,7 @@ public class MediaInfoManager {
         currentTitle = "";
         currentFrom = FROM_NONE;
         _listeners = new HashMap<>();
+        Log.i("MediaInfoManager", "Initialized Manager");
     }
 
     public static String getCurrentTitle() {

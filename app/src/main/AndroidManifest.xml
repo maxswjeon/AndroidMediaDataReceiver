@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme">
 
         <service
-            android:name=".services.NotificationService"
+            android:name=".services.MusicService"
             android:enabled="true"
             android:exported="true"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
@@ -26,11 +26,6 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
-
-        <receiver
-            android:name=".receiver.MusicReceiver"
-            android:enabled="true"
-            android:exported="true" />
 
         <activity android:name=".activities.MainActivity">
             <intent-filter>
