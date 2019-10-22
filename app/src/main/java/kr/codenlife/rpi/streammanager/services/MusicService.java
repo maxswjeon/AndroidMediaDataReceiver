@@ -14,7 +14,7 @@ import android.service.notification.StatusBarNotification;
 import android.text.SpannableString;
 import android.util.Log;
 
-import kr.codenlife.rpi.streammanager.MediaInfoManager;
+import kr.codenlife.rpi.streammanager.managers.MediaInfoManager;
 
 public class MusicService extends NotificationListenerService {
     private BroadcastReceiver _receiver;
